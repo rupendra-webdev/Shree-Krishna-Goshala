@@ -6,6 +6,7 @@
   --background-light: #f8f9fa;
   --font-size-large: 2.5rem;
   --font-size-medium: 1.2rem;
+  --font-size-small: 1rem; /* Added small font size */
   --line-height: 1.6;
   --border-radius: 10px;
 }
@@ -21,7 +22,6 @@ body {
 }
 
 /* Header */
-/* Custom styles for the navbar */
 .navbar {
   background-color: #f8f9fa; /* Light background */
 }
@@ -34,6 +34,7 @@ body {
 .navbar-collapse {
   justify-content: flex-end; 
 }
+
 /* Home Section */
 .home-section {
   position: relative;
@@ -85,10 +86,12 @@ body {
   display: flex;
   margin-left: -1rem;
   width: auto;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
 .gallery-column {
   padding-left: 1rem;
+  flex: 1 1 calc(33.333% - 2rem); /* Responsive columns */
 }
 
 .gallery-item {
@@ -235,7 +238,25 @@ h2 {
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .gallery-column {
+    flex: 1 1 calc(50% - 2rem); /* Two columns on medium screens */
+  }
+
+  .donation-section {
+    padding: 30px; /* Adjust padding for medium screens */
+  }
+
+  .donation-text {
+    padding: 15px; /* Adjust padding for medium screens */
+  }
+}
+
 @media (max-width: 768px) {
+  .gallery-column {
+    flex: 1 1 100%; /* Stack columns on smaller screens */
+  }
+
   .donation-section {
     flex-direction: column; /* Stack elements vertically on smaller screens */
     padding: 20px; /* Reduce padding */
@@ -283,7 +304,7 @@ h2 {
   background-image: url("src/assets/inspiring-bg-pattern.png");
   background-size: cover;
   background-position: center;
-  color: var(--secondery-text-color);
+  color: var(--secondary-text-color);
   position: relative;
 }
 
@@ -292,22 +313,7 @@ h2 {
   border-radius: var(--border-radius);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .donation-section {
-    flex-direction: column; /* Stack elements on smaller screens */
-  }
-
-  .donation-text,
-  .donation-qr {
-    flex: none; /* Reset flex properties */
-    width: 100%; /* Full width */
-    margin-bottom: 20px; /* Space between stacked elements */
-  }
-}
-
-/* Footer.css */
-
+/* Footer */
 .footer {
   background-color: #f8f9fa; /* Light background */
   color: #000; /* Black text */
@@ -357,12 +363,12 @@ h2 {
   padding: 10px 0;
 }
 
-/* Videos  */
+/* Videos */
 .video-section {
   background-image: url("src/assets/follow-us-pattern-2.png");
   background-size: cover;
   background-position: center;
-  color: var(--secondery-text-color);
+  color: var(--secondary-text-color);
   position: relative;
 }
 
@@ -411,6 +417,24 @@ h2 {
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .video-container {
+    padding: 10px 0; /* Reduce padding for medium screens */
+  }
+
+  .video-item {
+    margin-right: 15px; /* Reduce space between video items */
+  }
+
+  .video-thumbnail {
+    width: 180px; /* Adjust thumbnail width for medium screens */
+  }
+
+  .video-title {
+    font-size: 16px; /* Adjust font size for titles */
+  }
+}
+
 @media (max-width: 768px) {
   .video-container {
     padding: 10px 0; /* Reduce padding for smaller screens */
