@@ -365,7 +365,7 @@ h2 {
 
 /* Videos */
 .video-section {
-  background-image: url("src/assets/follow-us-pattern-2.png");
+  background-image: url("/src/assets/follow-us-pattern-2.png");
   background-size: cover;
   background-position: center;
   color: var(--secondary-text-color);
