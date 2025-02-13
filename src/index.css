@@ -479,3 +479,26 @@ h2 {
     font-size: 20px; /* Adjust close button size */
   }
 }
+
+
+
+
+/* whatsapp */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Size of the icon */
+  height: 60px; /* Size of the icon */
+  border-radius: 50%; /* Optional: make it circular */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
