@@ -4,12 +4,12 @@ import { Carousel, Container, Row, Col } from "react-bootstrap";
 const testimonialsData = [
   {
     name: "John Doe",
-    image: "/src/assets/gallery2.jpeg", // Replace with actual image URL
+    image: "./src/assets/gallery2.jpeg", // Replace with actual image URL
     comment: "An amazing place full of love and care for cows!",
   },
   {
     name: "John Doe",
-    image: "/src/assets/gallery2.jpeg", // Replace with actual image URL
+    image: "./src/assets/gallery2.jpeg", // Replace with actual image URL
     comment: "An amazing place full of love and care for cows!",
   },
   {

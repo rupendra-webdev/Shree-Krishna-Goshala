@@ -4,7 +4,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
-  { original: './src/assets/gallery1.jpeg', thumbnail: './src/assets/gallery1.jpeg' },
+  { original: '../src/assets/gallery1.jpeg', thumbnail: './src/assets/gallery1.jpeg' },
   { original: './src/assets/gallery2.jpeg', thumbnail: './src/assets/gallery2.jpeg' },
   { original: './src/assets/gallery3.jpeg', thumbnail: './src/assets/gallery3.jpeg' }
 ];

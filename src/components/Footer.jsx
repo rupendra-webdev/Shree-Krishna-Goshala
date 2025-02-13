@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Image */}
-      <img src="/src/assets/footer-bg-image.png" alt="Bottom Footer" />
+      <img src="./src/assets/footer-bg-image.png" alt="Bottom Footer" />
 
       <div className="bottom-text">
         <Container>
