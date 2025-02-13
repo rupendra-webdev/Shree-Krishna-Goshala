@@ -13,7 +13,7 @@ const Donation = () => {
           </a>
         </div>
         <div className="donation-qr">
-          <img src="src/assets/Qr.png" alt="Donation QR Code" width="200" />
+          <img src="/src/assets/Qr.png" alt="Donation QR Code" width="200" />
         </div>
       </div>
     </section>

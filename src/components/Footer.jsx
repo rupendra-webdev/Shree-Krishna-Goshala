@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       {/* Top Image */}
-      <img src="src/assets/footer-bg-image.png" alt="Top Footer" />
+      <img src="/src/assets/footer-bg-image.png" alt="Top Footer" />
 
       <div style={{ padding: '20px 0' }}>
         <Container>
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Image */}
-      <img src="src/assets/footer-bg-image.png" alt="Bottom Footer" />
+      <img src="/src/assets/footer-bg-image.png" alt="Bottom Footer" />
 
       <div className="bottom-text">
         <Container>
